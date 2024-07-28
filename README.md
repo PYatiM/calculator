@@ -1,2 +1,3 @@
-The following file contains to access multiple different application such as a calender, calculator, clock
-It consists of different if and while loops
+The following file contains to access multiple different application such as a calender, calculator, clock.
+It consists of different if and while loops.
+It is in three different programming languages.
