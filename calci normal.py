@@ -49,46 +49,60 @@ while True:
           def calen(m,y):
                print("\n")
                print(f"THE CALENDER FOR THE MONTH OF {m} and year {y} IS : ")
-               if m == "january":
-                    print(cal.month(y,1))
-                    print("\n")
-               elif m == "february":
-                    print(cal.month(y,2))
-                    print("\n")
-               elif m == "march":
-                    print(cal.month(y,3))
-                    print("\n")
-               elif m == "april":
-                    print(cal.month(y,4))
-                    print("\n")
-               elif m == "may":
-                    print(cal.month(y,5))
-                    print("\n")
-               elif m == "june":
-                    print(cal.month(y,6))
-                    print("\n")
-               elif m == "july":
-                    print(cal.month(y,7))
-                    print("\n")
-               elif m == "august":
-                    print(cal.month(y,8))
-                    print("\n")
-               elif m == "september":
-                    print(cal.month(y,9))
-                    print("\n")
-               elif m == "october":
-                    print(cal.month(y,10))
-                    print("\n")
-               elif m == "november":
-                    print(cal.month(y,11))
-                    print("\n")
-               elif m == "december":
-                    print(cal.month(y,12))
-                    print("\n")
-               else:
-                    print("INVALID MONTH \N{loudly crying face}")         
-                    print("\n")
-                    print("\n")
+               m = m.lower()
+               match (m):
+                   case "january":
+                       print(cal.month(y,1))
+                       print("\n")
+                       
+                   case "february":
+                       print(cal.month(y,2))
+                       print("\n")
+                       
+                   case "march":
+                       print(cal.month(y,3))
+                       print("\n")
+                       
+                   case "april":
+                       print(cal.month(y,4))
+                       print("\n")
+                       
+                   case "may":
+                       print(cal.month(y,5))
+                       print("\n")
+                       
+                   case "june":
+                       print(cal.month(y,6))
+                       print("\n")
+                       
+                   case "july":
+                       print(cal.month(y,7))
+                       print("\n")
+                       
+                   case "august":
+                       print(cal.month(y,8))
+                       print("\n")
+                       
+                   case "september":
+                       print(cal.month(y,9))
+                       print("\n")
+                       
+                   case "october":
+                       print(cal.month(y,10))
+                       print("\n")
+                       
+                   case "november":
+                       print(cal.month(y,11))
+                       print("\n")
+                       
+                   case "december":
+                       print(cal.month(y,12))
+                       print("\n")
+                       
+                   case _:
+                       print("INVALID MONTH \N{loudly crying face}")         
+                       print("\n")
+                       print("\n")
           b = input("Enter the month : ")
           e = b.lower()
           c = int(input("ENTER THE YEAR : "))
@@ -99,17 +113,9 @@ while True:
           print("\n")
           print(ti.strftime("%H:%M"))
           print("\n")
-
+          break
      elif a == 4:
           print("THANK YOU \N{saluting face}")
-          break
+          
      else:
           print("INVALID CHOICE \N{loudly crying face}")
-
-
-
-
-
-
-
-
